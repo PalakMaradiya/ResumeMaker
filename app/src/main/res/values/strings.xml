@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Resume Maker</string>
+    <string name="accounting_finace"><![CDATA[Accounting & Finace]]></string>
+    <string name="business_management"><![CDATA[Business & Management]]></string>
+    <string name="customer_service_operateons"><![CDATA[Customer Service & Operateons]]></string>
+    <string name="hr_recruitment"><![CDATA[HR & Recruitment]]></string>
+    <string name="construction_building"><![CDATA[Construction & building]]></string>
+    <string name="hospitality_tourism"><![CDATA[Hospitality & Tourism]]></string>
+</resources>

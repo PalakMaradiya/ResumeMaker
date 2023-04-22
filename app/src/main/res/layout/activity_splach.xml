@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".SplachActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_marginLeft="@dimen/_80sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:src="@drawable/r" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="workruti"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:textColor="#87CBB9"
+                android:textSize="@dimen/_20ssp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RESUME BILDER"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:textColor="#87CBB9" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
