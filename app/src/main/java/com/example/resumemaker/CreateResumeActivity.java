@@ -12,7 +12,6 @@ import com.google.android.material.textfield.TextInputEditText;
 
 public class CreateResumeActivity extends AppCompatActivity {
 
-    TextInputEditText textFirstname;
 
     TextView textname;
 
@@ -36,6 +35,7 @@ public class CreateResumeActivity extends AppCompatActivity {
         }
 
         CardView = findViewById(R.id.CardView);
+
         CardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

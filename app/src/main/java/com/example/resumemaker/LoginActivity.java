@@ -9,6 +9,9 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.Toast;
+
+import com.google.android.material.textfield.TextInputEditText;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +24,8 @@ public class LoginActivity extends AppCompatActivity {
     ImageView imgBack;
 
     AppCompatButton btnlogin;
+
+    TextInputEditText  txtEmail , textPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,11 +45,11 @@ public class LoginActivity extends AppCompatActivity {
         imgBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                Intent i = new Intent(LoginActivity.this,CareerLevalActivity.class);
+                Intent i = new Intent(LoginActivity.this,SplashActivity2.class);
                 startActivity(i);
             }
         });
+
 
 
 
@@ -65,8 +70,26 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent i = new Intent(LoginActivity.this,CreateResumeActivity.class);
-                startActivity(i);
+
+                String  email = txtEmail.getText().toString();
+                String password = textPassword.getText().toString();
+
+                if(email.isEmpty())
+                {
+                    Toast.makeText(LoginActivity.this, "Please Enter Your Emial", Toast.LENGTH_SHORT).show();
+                }
+                else if (password.isEmpty())
+                {
+                    Toast.makeText(LoginActivity.this, "Please Enter Your Phone Number", Toast.LENGTH_SHORT).show();
+                }
+                else
+                {
+                    Toast.makeText(LoginActivity.this, "Login Successfully", Toast.LENGTH_SHORT).show();
+
+                    Intent i = new Intent(LoginActivity.this,CreateResumeActivity.class);
+                    startActivity(i);
+                }
+
             }
         });
     }

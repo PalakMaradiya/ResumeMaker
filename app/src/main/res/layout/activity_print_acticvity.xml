@@ -28,7 +28,7 @@
             android:layout_marginLeft="@dimen/_5sdp"
             android:textColor="@color/black"
             tools:ignore="name"
-            android:id="@+id/FName"/>
+            android:id="@+id/txtname"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -63,6 +63,149 @@
             tools:ignore="address"
             android:textColor="@color/black"
             android:id="@+id/Add"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            tools:ignore="Reference Name"
+            android:textColor="@color/black"
+            android:id="@+id/txtRefName"/>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            tools:ignore="JobTitle"
+            android:textColor="@color/black"
+            android:id="@+id/textjobTitle"/>
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            tools:ignore="Company Name "
+            android:textColor="@color/black"
+            android:id="@+id/textCname"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            tools:ignore="Year "
+            android:textColor="@color/black"
+            android:id="@+id/textYear"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            tools:ignore="Cource "
+            android:textColor="@color/black"
+            android:id="@+id/textCourse"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            tools:ignore="School "
+            android:textColor="@color/black"
+            android:id="@+id/textSchool"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            tools:ignore="Grade "
+            android:textColor="@color/black"
+            android:id="@+id/textGrade"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            tools:ignore="Comapny Name "
+            android:textColor="@color/black"
+            android:id="@+id/textcomName"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            tools:ignore="Job Title  "
+            android:textColor="@color/black"
+            android:id="@+id/textjob"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            tools:ignore="Start Date "
+            android:textColor="@color/black"
+            android:id="@+id/textstartDate"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            tools:ignore="End Date "
+            android:textColor="@color/black"
+            android:id="@+id/txtEndDate"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            tools:ignore="Deatils "
+            android:textColor="@color/black"
+            android:id="@+id/txtdeatails"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            tools:ignore="Skils "
+            android:textColor="@color/black"
+            android:id="@+id/textSkills"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            tools:text="Title  "
+            android:textColor="@color/black"
+            android:id="@+id/textTitle"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            tools:text="Descersption "
+            android:textColor="@color/black"
+            android:id="@+id/textDescersption"/>
 
     </LinearLayout>
 

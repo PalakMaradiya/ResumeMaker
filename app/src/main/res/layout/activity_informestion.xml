@@ -22,6 +22,7 @@
             android:layout_width="@dimen/_25sdp"
             android:layout_height="@dimen/_25sdp"
             android:src="@drawable/arrow"
+            android:id="@+id/imagback"
             android:layout_marginTop="@dimen/_10sdp"
             android:layout_marginLeft="@dimen/_10sdp"/>
 
@@ -98,6 +99,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/_50sdp"
         app:cardCornerRadius="@dimen/_10sdp"
+        android:id="@+id/txtReference"
         app:cardBackgroundColor="#6DA9E4"
         android:layout_marginHorizontal="@dimen/_20sdp">
 
@@ -128,7 +130,6 @@
                 android:layout_marginTop="@dimen/_15sdp"
                 android:layout_marginLeft="@dimen/_50sdp"
                 android:text="Reference"
-                android:id="@+id/txtReference"
                 android:textSize="@dimen/_15ssp"
                 android:textStyle="bold"
                 android:textColor="@color/white"/>
@@ -147,6 +148,7 @@
         android:layout_height="@dimen/_50sdp"
         app:cardCornerRadius="@dimen/_10sdp"
         app:cardBackgroundColor="#6DA9E4"
+        android:id="@+id/txtEducation"
         android:layout_marginHorizontal="@dimen/_20sdp">
 
         <!--        for image-->
@@ -176,7 +178,6 @@
                 android:layout_marginTop="@dimen/_15sdp"
                 android:layout_marginLeft="@dimen/_50sdp"
                 android:text="Education  "
-                android:id="@+id/txtEducation"
                 android:textSize="@dimen/_15ssp"
                 android:textStyle="bold"
                 android:textColor="@color/white"/>
@@ -194,6 +195,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/_50sdp"
         app:cardCornerRadius="@dimen/_10sdp"
+        android:id="@+id/txtExperirnce"
         app:cardBackgroundColor="#6DA9E4"
         android:layout_marginHorizontal="@dimen/_20sdp">
 
@@ -224,7 +226,6 @@
                 android:layout_marginTop="@dimen/_15sdp"
                 android:layout_marginLeft="@dimen/_50sdp"
                 android:text="Experience  "
-                android:id="@+id/txtExperirnce"
                 android:textSize="@dimen/_15ssp"
                 android:textStyle="bold"
                 android:textColor="@color/white"/>
@@ -243,6 +244,7 @@
         android:layout_height="@dimen/_50sdp"
         app:cardCornerRadius="@dimen/_10sdp"
         app:cardBackgroundColor="#6DA9E4"
+        android:id="@+id/txtSkills"
         android:layout_marginHorizontal="@dimen/_20sdp">
 
         <!--        for image-->
@@ -272,7 +274,6 @@
                 android:layout_marginTop="@dimen/_15sdp"
                 android:layout_marginLeft="@dimen/_50sdp"
                 android:text="Skills  "
-                android:id="@+id/txtSkills"
                 android:textSize="@dimen/_15ssp"
                 android:textStyle="bold"
                 android:textColor="@color/white"/>
@@ -290,6 +291,7 @@
         android:layout_height="@dimen/_50sdp"
         app:cardCornerRadius="@dimen/_10sdp"
         app:cardBackgroundColor="#6DA9E4"
+        android:id="@+id/txtProject"
         android:layout_marginHorizontal="@dimen/_20sdp">
 
         <!--        for image-->
@@ -319,7 +321,6 @@
                 android:layout_marginTop="@dimen/_15sdp"
                 android:layout_marginLeft="@dimen/_50sdp"
                 android:text="Project "
-                android:id="@+id/txtProject"
                 android:textSize="@dimen/_15ssp"
                 android:textStyle="bold"
                 android:textColor="@color/white"/>

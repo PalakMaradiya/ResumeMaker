@@ -34,19 +34,20 @@ public class referenceActivity extends AppCompatActivity {
         txtPhoneNumber = findViewById(R.id.txtPhoneNumber);
         btnSumbit = findViewById(R.id.btnSumbit);
         imgBack = findViewById(R.id.imgBack);
+        btnReset = findViewById(R.id.btnReset);
 
 
-        String name = textrefName.getText().toString();
-        String title = textjobTitle.getText().toString();
-        String comname = textcompanyName.getText().toString();
-        String email = text.getText().toString();
-        String number = txtPhoneNumber.getText().toString();
 
         btnSumbit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String refname = textrefName.getText().toString();
+                String title = textjobTitle.getText().toString();
+                String comname = textcompanyName.getText().toString();
+                String email = text.getText().toString();
+                String number = txtPhoneNumber.getText().toString();
                 Intent i = new Intent(referenceActivity.this,PrintActicvity.class);
-                i.putExtra("name",name);
+                i.putExtra("refname",refname);
                 i.putExtra("title",title);
                 i.putExtra("comname",comname);
                 i.putExtra("email",email);
@@ -54,7 +55,6 @@ public class referenceActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
-
 
         btnReset.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -33,23 +33,26 @@ public class ExperineceActivity extends AppCompatActivity {
         textstartDate = findViewById(R.id.textstartDate);
         txtEbdDate = findViewById(R.id.txtEbdDate);
         txtdetails = findViewById(R.id.txtdetails);
+        imgback = findViewById(R.id.imgback);
 
 
-        String Cname = textCompanyName.getText().toString();
-        String job = textJob.getText().toString();
-        String sDate = textstartDate.getText().toString();
-        String Edate = txtEbdDate.getText().toString();
-        String Details = txtdetails.getText().toString();
 
         btnSumbit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                String Cname = textCompanyName.getText().toString();
+                String job = textJob.getText().toString();
+                String sDate = textstartDate.getText().toString();
+                String Edate = txtEbdDate.getText().toString();
+                String Details = txtdetails.getText().toString();
+
                 Intent i = new Intent(ExperineceActivity.this, PrintActicvity.class);
-                i.putExtra("Cname", Cname);
-                i.putExtra("job", job);
-                i.putExtra("sDate", sDate);
-                i.putExtra("Edate", Edate);
-                i.putExtra("Details", Details);
+                i.putExtra("Cname",Cname);
+                i.putExtra("job",job);
+                i.putExtra("sDate",sDate);
+                i.putExtra("Edate",Edate);
+                i.putExtra("Details",Details);
                 startActivity(i);
             }
         });

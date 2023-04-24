@@ -22,11 +22,7 @@ import java.util.List;
 public class SignupActivity extends AppCompatActivity {
 
     ImageView imgBack;
-
     String fname,lastname,email,phonenumber,password;
-
-    TextView tetlogin;
-
 
     TextView textname;
     AppCompatButton  btnSiganup2;
@@ -70,17 +66,14 @@ public class SignupActivity extends AppCompatActivity {
         });
 
 
-        tetlogin=findViewById(R.id.tetlogin);
-        tetlogin.setOnClickListener(new View.OnClickListener() {
+        btnSiganup2=findViewById(R.id.btnSiganup2);
+        btnSiganup2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(SignupActivity.this,LoginActivity.class);
                 startActivity(i);
             }
         });
-
-
-
 
         textFirstname=findViewById(R.id.textFirstname);
         txtLastname=findViewById(R.id.txtLastname);

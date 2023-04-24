@@ -28,27 +28,29 @@ public class eductionActivity extends AppCompatActivity {
     private void initview() {
 
 
-        textYear.findViewById(R.id.textYear);
-        txtCourse.findViewById(R.id.txtCourse);
-        textSchool.findViewById(R.id.textSchool);
-        textGrade.findViewById(R.id.textGrade);
-        imgback.findViewById(R.id.imgback);
-        btnSumbit.findViewById(R.id.btnSumbit);
-        btnReset.findViewById(R.id.btnReset);
+        textYear=findViewById(R.id.textYear);
+        txtCourse=findViewById(R.id.txtCourse);
+        textSchool=findViewById(R.id.textSchool);
+        textGrade=findViewById(R.id.textGrade);
+        imgback=findViewById(R.id.imgback);
+        btnSumbit=findViewById(R.id.btnSumbit);
+        btnReset=findViewById(R.id.btnReset);
 
-        String year = textYear.getText().toString();
-        String Course = txtCourse.getText().toString();
-        String School = textSchool.getText().toString();
-        String Grade = textGrade.getText().toString();
+
 
         btnSumbit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                String year = textYear.getText().toString();
+                String Course = txtCourse.getText().toString();
+                String School = textSchool.getText().toString();
+                String Grade = textGrade.getText().toString();
                 Intent i = new Intent(eductionActivity.this, PrintActicvity.class);
-                i.putExtra("year", year);
-                i.putExtra("Course", Course);
-                i.putExtra("School", School);
-                i.putExtra("Grade", Grade);
+                i.putExtra("year",year);
+                i.putExtra("Course",Course);
+                i.putExtra("School",School);
+                i.putExtra("Grade",Grade);
                 startActivity(i);
             }
         });

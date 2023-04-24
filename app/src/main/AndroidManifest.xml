@@ -41,6 +41,10 @@
         <activity
             android:name=".LoginActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".referenceActivity"
+            android:exported="false"/>
         <activity
             android:name=".SplachActivity"
             android:exported="true">

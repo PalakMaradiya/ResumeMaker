@@ -33,12 +33,14 @@ public class projectActivity extends AppCompatActivity {
         btnSumbit = findViewById(R.id.btnSumbit);
         imgback = findViewById(R.id.imgback);
 
-        String title = textTitle.getText().toString();
-        String Descripition = textDescripition.getText().toString();
+
 
         btnSumbit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                String title = textTitle.getText().toString();
+                String Descripition = textDescripition.getText().toString();
                 Intent i = new Intent(projectActivity.this,PrintActicvity.class);
                 i.putExtra("title",title);
                 i.putExtra("Descripition",Descripition);

@@ -5,6 +5,7 @@ import androidx.appcompat.widget.AppCompatButton;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RadioButton;
@@ -65,14 +66,17 @@ public class PersoanlDetailsActivity extends AppCompatActivity {
             }
         });
 
-        name = textName.getText().toString();
-        add = textAddress.getText().toString();
-        email = textEmail.getText().toString();
-        num = txtPhoneNumber.getText().toString();
+
 
         btnSumbit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                add = textAddress.getText().toString();
+                name = textName.getText().toString();
+                email = textEmail.getText().toString();
+                num = txtPhoneNumber.getText().toString();
+
                 Intent i = new Intent(PersoanlDetailsActivity.this,PrintActicvity.class);
                 i.putExtra("name",name);
                 i.putExtra("add",add);
@@ -90,6 +94,9 @@ public class PersoanlDetailsActivity extends AppCompatActivity {
                 textAddress.setText(null);
                 textEmail.setText(null);
                 txtPhoneNumber.setText(null);
+                radioStudent.setText(null);
+                radioExperince.setText(null);
+
 
             }
         });

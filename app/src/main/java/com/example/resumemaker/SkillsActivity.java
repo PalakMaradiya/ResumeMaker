@@ -15,7 +15,7 @@ public class SkillsActivity extends AppCompatActivity {
 
     ImageView imgback;
     TextInputEditText textskils;
-    AppCompatButton btnLogin,btnSumbit;
+    AppCompatButton btnReset,btnSumbit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,20 +26,24 @@ public class SkillsActivity extends AppCompatActivity {
 
     private void initview() {
         textskils = findViewById(R.id.textskils);
-        btnLogin = findViewById(R.id.btnLogin);
+        btnReset = findViewById(R.id.btnReset);
         btnSumbit = findViewById(R.id.btnSumbit);
+        imgback = findViewById(R.id.imgback);
 
-        String skils = textskils.getText().toString();
+
 
 
         btnSumbit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                String skils = textskils.getText().toString();
                 Intent i = new Intent(SkillsActivity.this,PrintActicvity.class);
                 i.putExtra("skils",skils);
                 startActivity(i);
             }
         });
+
 
         imgback.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,7 +54,7 @@ public class SkillsActivity extends AppCompatActivity {
         });
 
 
-        btnLogin.setOnClickListener(new View.OnClickListener() {
+        btnReset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
